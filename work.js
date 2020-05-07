@@ -9,4 +9,4 @@ const data =
  const value = data.filter(fun => {
       return fun % 2 == 0;
   });
-    console.log(`${value}`);
+    console.log(`Even Number --  ${value}`);
