@@ -1,28 +1,19 @@
 
 
 
-const {getData} = require('./utility')
+const { getData } = require('./utility')
 
 
-  const linearSearch = (data, val) => {  
-                        
-     for (let i = 0; i < data.length; i++) {
 
-       
+// Second type ..
+const linearSeach = (data, value) => {
 
-       if (data[i] == val) {
-       
-        
-         
+  data.forEach((nums, index) => {
+       if(nums == value) {
+         newIndex = index;
+       } 
+   });
+  return newIndex;
+}  
 
-         return i;
-        
-      }
-      
-    } return null;
-    
-  }
-
-    console.log(`linear: ${linearSearch(getData(),24)}`);
-
-  
+console.log(linearSeach(getData(),20))
